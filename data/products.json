@@ -1,0 +1,485 @@
+{
+  "categories": [
+    { "id": "vegetables", "name": "Овощи", "icon": "🥬" },
+    { "id": "fruits", "name": "Фрукты", "icon": "🍎" },
+    { "id": "meat", "name": "Мясо", "icon": "🥩" },
+    { "id": "dairy", "name": "Молочные продукты", "icon": "🧀" },
+    { "id": "bread", "name": "Хлеб и выпечка", "icon": "🍞" },
+    { "id": "groceries", "name": "Бакалея", "icon": "🌾" },
+    { "id": "drinks", "name": "Напитки", "icon": "🥤" },
+    { "id": "fish", "name": "Рыба и морепродукты", "icon": "🐟" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Помидоры черри",
+      "price": 189,
+      "rating": 4.8,
+      "category": "vegetables",
+      "popular": true,
+      "description": "Сочные помидоры черри на ветке, идеальны для салатов и закусок.",
+      "image": "https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=400&h=400&fit=crop",
+      "unit": "250 г",
+      "recipes": [
+        { "name": "Салат с черри и моцареллой", "ingredients": ["Помидоры черри", "Моцарелла", "Базилик", "Оливковое масло"], "description": "Классический итальянский салат капрезе за 10 минут." },
+        { "name": "Запечённые черри", "ingredients": ["Помидоры черри", "Чеснок", "Тимьян", "Оливковое масло"], "description": "Нежные запечённые помидоры — отличная гарнирная закуска." }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Огурцы свежие",
+      "price": 79,
+      "rating": 4.5,
+      "category": "vegetables",
+      "popular": false,
+      "description": "Хрустящие огурцы с грядки, без пестицидов.",
+      "image": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=400&h=400&fit=crop",
+      "unit": "500 г",
+      "recipes": [
+        { "name": "Окрошка", "ingredients": ["Огурцы", "Кефир", "Картофель", "Яйца", "Зелень"], "description": "Освежающий летний суп на кефире." },
+        { "name": "Салат из огурцов", "ingredients": ["Огурцы", "Сметана", "Укроп", "Соль"], "description": "Простой и лёгкий салат на каждый день." }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Морковь",
+      "price": 45,
+      "rating": 4.3,
+      "category": "vegetables",
+      "popular": false,
+      "description": "Сладкая морковь, богатая витамином А.",
+      "image": "https://images.unsplash.com/photo-1447175008436-170170753886?w=400&h=400&fit=crop",
+      "unit": "1 кг",
+      "recipes": [
+        { "name": "Морковный суп-пюре", "ingredients": ["Морковь", "Лук", "Сливки", "Имбирь"], "description": "Нежный крем-суп с имбирным акцентом." },
+        { "name": "Морковный торт", "ingredients": ["Морковь", "Мука", "Корица", "Сливочный сыр"], "description": "Ароматный десерт с крем-чизом." }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Брокколи",
+      "price": 159,
+      "rating": 4.6,
+      "category": "vegetables",
+      "popular": true,
+      "description": "Свежая брокколи, отличный источник клетчатки.",
+      "image": "https://images.unsplash.com/photo-1459411552885-9e45debb7d1a?w=400&h=400&fit=crop",
+      "unit": "400 г",
+      "recipes": [
+        { "name": "Брокколи на пару", "ingredients": ["Брокколи", "Лимон", "Оливковое масло", "Чеснок"], "description": "Полезный гарнир за 15 минут." },
+        { "name": "Крем-суп из брокколи", "ingredients": ["Брокколи", "Картофель", "Сливки", "Лук"], "description": "Сытный суп для холодного вечера." }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Картофель молодой",
+      "price": 65,
+      "rating": 4.4,
+      "category": "vegetables",
+      "popular": false,
+      "description": "Молодой картофель с тонкой кожурой.",
+      "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=400&fit=crop",
+      "unit": "1 кг",
+      "recipes": [
+        { "name": "Молодой картофель с укропом", "ingredients": ["Картофель", "Укроп", "Сливочное масло", "Соль"], "description": "Классический гарнир к летним блюдам." },
+        { "name": "Картофель по-деревенски", "ingredients": ["Картофель", "Паприка", "Розмарин", "Оливковое масло"], "description": "Хрустящий запечённый картофель." }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Яблоки Голден",
+      "price": 129,
+      "rating": 4.7,
+      "category": "fruits",
+      "popular": true,
+      "description": "Сладкие яблоки сорта Голден, хрустящие и ароматные.",
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400&h=400&fit=crop",
+      "unit": "1 кг",
+      "recipes": [
+        { "name": "Яблочный пирог", "ingredients": ["Яблоки", "Мука", "Корица", "Сахар"], "description": "Домашний пирог с корицей и карамелизованными яблоками." },
+        { "name": "Запечённые яблоки", "ingredients": ["Яблоки", "Мёд", "Корица", "Орехи"], "description": "Полезный десерт без сахара." }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Бананы",
+      "price": 99,
+      "rating": 4.6,
+      "category": "fruits",
+      "popular": true,
+      "description": "Спелые бананы, идеальны для смузи и перекуса.",
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop",
+      "unit": "1 кг",
+      "recipes": [
+        { "name": "Банановый смузи", "ingredients": ["Бананы", "Молоко", "Мёд", "Лёд"], "description": "Энергетический напиток за 3 минуты." },
+        { "name": "Банановые панкейки", "ingredients": ["Бананы", "Яйца", "Мука", "Разрыхлитель"], "description": "Пышные панкейки без сахара." }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Апельсины",
+      "price": 149,
+      "rating": 4.5,
+      "category": "fruits",
+      "popular": false,
+      "description": "Сочные апельсины, богатые витамином С.",
+      "image": "https://images.unsplash.com/photo-1547514704-5bb1d4c4ad67?w=400&h=400&fit=crop",
+      "unit": "1 кг",
+      "recipes": [
+        { "name": "Свежевыжатый сок", "ingredients": ["Апельсины"], "description": "Натуральный витаминный сок на завтрак." },
+        { "name": "Апельсиновый салат", "ingredients": ["Апельсины", "Фенхель", "Оливковое масло", "Мята"], "description": "Освежающий цитрусовый салат." }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Клубника",
+      "price": 299,
+      "rating": 4.9,
+      "category": "fruits",
+      "popular": true,
+      "description": "Свежая клубника, сладкая и ароматная.",
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&h=400&fit=crop",
+      "unit": "250 г",
+      "recipes": [
+        { "name": "Клубничный десерт", "ingredients": ["Клубника", "Сливки", "Сахар", "Ваниль"], "description": "Лёгкий десерт с взбитыми сливками." },
+        { "name": "Смузи-боул с клубникой", "ingredients": ["Клубника", "Банан", "Йогурт", "Гранола"], "description": "Питательный завтрак в миске." }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Виноград зелёный",
+      "price": 219,
+      "rating": 4.4,
+      "category": "fruits",
+      "popular": false,
+      "description": "Без косточек, сладкий и сочный.",
+      "image": "https://images.unsplash.com/photo-1537640538964-79a7103a5bea?w=400&h=400&fit=crop",
+      "unit": "500 г",
+      "recipes": [
+        { "name": "Фруктовый салат", "ingredients": ["Виноград", "Яблоки", "Апельсины", "Мёд"], "description": "Яркий микс сезонных фруктов." },
+        { "name": "Салат с козьим сыром", "ingredients": ["Виноград", "Козий сыр", "Руккола", "Орехи"], "description": "Изысканная закуска к ужину." }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Говядина вырезка",
+      "price": 899,
+      "rating": 4.8,
+      "category": "meat",
+      "popular": true,
+      "description": "Нежная говяжья вырезка, идеальна для стейков.",
+      "image": "https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=400&h=400&fit=crop",
+      "unit": "500 г",
+      "recipes": [
+        { "name": "Стейк medium rare", "ingredients": ["Говядина", "Соль", "Перец", "Розмарин"], "description": "Сочный стейк на сковороде за 15 минут." },
+        { "name": "Говяжий гуляш", "ingredients": ["Говядина", "Лук", "Томатная паста", "Морковь"], "description": "Традиционное блюдо с насыщенным соусом." }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Куриное филе",
+      "price": 349,
+      "rating": 4.6,
+      "category": "meat",
+      "popular": true,
+      "description": "Филе куриной грудки без кожи и костей.",
+      "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400&h=400&fit=crop",
+      "unit": "600 г",
+      "recipes": [
+        { "name": "Куриное филе на гриле", "ingredients": ["Куриное филе", "Лимон", "Чеснок", "Травы"], "description": "Диетическое блюдо с золотистой корочкой." },
+        { "name": "Куриный суп", "ingredients": ["Куриное филе", "Лапша", "Морковь", "Лук"], "description": "Согревающий домашний суп." }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Свинина шейка",
+      "price": 499,
+      "rating": 4.5,
+      "category": "meat",
+      "popular": false,
+      "description": "Мраморная свиная шейка для запекания.",
+      "image": "https://images.unsplash.com/photo-1602473817295-e7899e8c310a?w=400&h=400&fit=crop",
+      "unit": "700 г",
+      "recipes": [
+        { "name": "Запечённая свинина", "ingredients": ["Свинина", "Чеснок", "Горчица", "Розмарин"], "description": "Нежное мясо, тающее во рту." },
+        { "name": "Свиные отбивные", "ingredients": ["Свинина", "Яйцо", "Сухари", "Соль"], "description": "Хрустящие отбивные на сковороде." }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Фарш говяжий",
+      "price": 399,
+      "rating": 4.4,
+      "category": "meat",
+      "popular": false,
+      "description": "Свежий говяжий фарш для котлет и пасты.",
+      "image": "https://images.unsplash.com/photo-1602473817295-e7899e8c310a?w=400&h=400&fit=crop",
+      "unit": "500 г",
+      "recipes": [
+        { "name": "Домашние котлеты", "ingredients": ["Фарш", "Лук", "Яйцо", "Хлеб"], "description": "Сочные котлеты как у бабушки." },
+        { "name": "Болоньезе", "ingredients": ["Фарш", "Томаты", "Лук", "Паста"], "description": "Классический итальянский соус к пасте." }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Молоко 3.2%",
+      "price": 89,
+      "rating": 4.7,
+      "category": "dairy",
+      "popular": true,
+      "description": "Натуральное пастеризованное молоко.",
+      "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=400&fit=crop",
+      "unit": "1 л",
+      "recipes": [
+        { "name": "Домашняя овсянка", "ingredients": ["Молоко", "Овсянка", "Мёд", "Ягоды"], "description": "Питательный завтрак за 10 минут." },
+        { "name": "Молочный коктейль", "ingredients": ["Молоко", "Банан", "Какао", "Мёд"], "description": "Сладкий напиток для детей и взрослых." }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Творог 5%",
+      "price": 119,
+      "rating": 4.6,
+      "category": "dairy",
+      "popular": true,
+      "description": "Нежный зернистый творог, высокое содержание белка.",
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=400&fit=crop",
+      "unit": "200 г",
+      "recipes": [
+        { "name": "Сырники", "ingredients": ["Творог", "Яйцо", "Мука", "Сахар"], "description": "Пышные сырники на завтрак." },
+        { "name": "Творожная запеканка", "ingredients": ["Творог", "Манка", "Яйца", "Изюм"], "description": "Нежная запеканка для всей семьи." }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Сметана 20%",
+      "price": 79,
+      "rating": 4.5,
+      "category": "dairy",
+      "popular": false,
+      "description": "Густая сметана для борща и запеканок.",
+      "image": "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&h=400&fit=crop",
+      "unit": "300 г",
+      "recipes": [
+        { "name": "Борщ со сметаной", "ingredients": ["Сметана", "Борщ", "Укроп"], "description": "Классическая подача русского борща." },
+        { "name": "Сметанный соус", "ingredients": ["Сметана", "Чеснок", "Укроп", "Соль"], "description": "Универсальный соус к картофелю." }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Сыр Гауда",
+      "price": 349,
+      "rating": 4.8,
+      "category": "dairy",
+      "popular": true,
+      "description": "Голландский сыр с кремовой текстурой.",
+      "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&h=400&fit=crop",
+      "unit": "200 г",
+      "recipes": [
+        { "name": "Сырные тосты", "ingredients": ["Сыр Гауда", "Хлеб", "Масло"], "description": "Хрустящие сэндвичи с расплавленным сыром." },
+        { "name": "Макароны с сыром", "ingredients": ["Сыр", "Паста", "Сливки", "Мускатный орех"], "description": "Кремовая паста в стиле mac and cheese." }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Йогурт натуральный",
+      "price": 69,
+      "rating": 4.4,
+      "category": "dairy",
+      "popular": false,
+      "description": "Греческий йогурт без добавок и сахара.",
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=400&fit=crop",
+      "unit": "150 г",
+      "recipes": [
+        { "name": "Йогурт с гранолой", "ingredients": ["Йогурт", "Гранола", "Мёд", "Ягоды"], "description": "Быстрый и полезный завтрак." },
+        { "name": "Цацики", "ingredients": ["Йогурт", "Огурцы", "Чеснок", "Укроп"], "description": "Греческий соус к мясу и овощам." }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Батон нарезной",
+      "price": 49,
+      "rating": 4.3,
+      "category": "bread",
+      "popular": false,
+      "description": "Свежий белый батон, мягкий и ароматный.",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop",
+      "unit": "400 г",
+      "recipes": [
+        { "name": "Бутерброды с авокадо", "ingredients": ["Батон", "Авокадо", "Яйцо", "Соль"], "description": "Питательный завтрак за 5 минут." },
+        { "name": "Французские тосты", "ingredients": ["Батон", "Яйца", "Молоко", "Корица"], "description": "Сладкие тосты на сковороде." }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Бородинский хлеб",
+      "price": 59,
+      "rating": 4.7,
+      "category": "bread",
+      "popular": true,
+      "description": "Ржаной хлеб с кориандром, выпечен по традиционному рецепту.",
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=400&fit=crop",
+      "unit": "350 г",
+      "recipes": [
+        { "name": "Бутерброд с селёдкой", "ingredients": ["Бородинский хлеб", "Селёдка", "Лук", "Масло"], "description": "Классическая русская закуска." },
+        { "name": "Гренки с чесноком", "ingredients": ["Бородинский хлеб", "Чеснок", "Масло", "Зелень"], "description": "Хрустящие чесночные гренки к супу." }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Круассаны",
+      "price": 199,
+      "rating": 4.8,
+      "category": "bread",
+      "popular": true,
+      "description": "Слоёные круассаны с масляным вкусом.",
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=400&fit=crop",
+      "unit": "4 шт",
+      "recipes": [
+        { "name": "Круассан с джемом", "ingredients": ["Круассаны", "Клубничный джем", "Сливочное масло"], "description": "Французский завтрак за минуту." },
+        { "name": "Круассан-сэндвич", "ingredients": ["Круассаны", "Ветчина", "Сыр", "Яйцо"], "description": "Сытный перекус в дорогу." }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Гречка",
+      "price": 89,
+      "rating": 4.5,
+      "category": "groceries",
+      "popular": false,
+      "description": "Отборная гречневая крупа, ядрица.",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=400&fit=crop",
+      "unit": "900 г",
+      "recipes": [
+        { "name": "Гречка с грибами", "ingredients": ["Гречка", "Шампиньоны", "Лук", "Сметана"], "description": "Постное блюдо с насыщенным вкусом." },
+        { "name": "Гречневые котлеты", "ingredients": ["Гречка", "Лук", "Яйцо", "Мука"], "description": "Вегетарианские котлеты на пару." }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Рис басмати",
+      "price": 159,
+      "rating": 4.6,
+      "category": "groceries",
+      "popular": true,
+      "description": "Длиннозёрный ароматный рис для плова и карри.",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=400&fit=crop",
+      "unit": "500 г",
+      "recipes": [
+        { "name": "Плов", "ingredients": ["Рис", "Баранина", "Морковь", "Специи"], "description": "Традиционный узбекский плов." },
+        { "name": "Рис с овощами", "ingredients": ["Рис", "Брокколи", "Морковь", "Соевый соус"], "description": "Лёгкий гарнир в азиатском стиле." }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Макароны из твёрдых сортов",
+      "price": 99,
+      "rating": 4.4,
+      "category": "groceries",
+      "popular": false,
+      "description": "Паста из твёрдых сортов пшеницы.",
+      "image": "https://images.unsplash.com/photo-1551462147-858f6a4e0c4e?w=400&h=400&fit=crop",
+      "unit": "500 г",
+      "recipes": [
+        { "name": "Карбонара", "ingredients": ["Макароны", "Бекон", "Яйца", "Пармезан"], "description": "Классическая итальянская паста." },
+        { "name": "Паста с томатным соусом", "ingredients": ["Макароны", "Томаты", "Базилик", "Чеснок"], "description": "Простое и вкусное блюдо на ужин." }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Оливковое масло Extra Virgin",
+      "price": 449,
+      "rating": 4.9,
+      "category": "groceries",
+      "popular": true,
+      "description": "Холодного отжима, идеально для салатов.",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&h=400&fit=crop",
+      "unit": "500 мл",
+      "recipes": [
+        { "name": "Салат с оливковым маслом", "ingredients": ["Оливковое масло", "Помидоры", "Огурцы", "Базилик"], "description": "Средиземноморский салат." },
+        { "name": "Брускетта", "ingredients": ["Оливковое масло", "Хлеб", "Томаты", "Чеснок"], "description": "Итальянская закуска за 10 минут." }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Минеральная вода",
+      "price": 55,
+      "rating": 4.3,
+      "category": "drinks",
+      "popular": false,
+      "description": "Природная газированная минеральная вода.",
+      "image": "https://images.unsplash.com/photo-1548839140-5a941f221e8f?w=400&h=400&fit=crop",
+      "unit": "1.5 л",
+      "recipes": []
+    },
+    {
+      "id": 28,
+      "name": "Апельсиновый сок",
+      "price": 129,
+      "rating": 4.5,
+      "category": "drinks",
+      "popular": true,
+      "description": "100% свежевыжатый апельсиновый сок.",
+      "image": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=400&fit=crop",
+      "unit": "1 л",
+      "recipes": []
+    },
+    {
+      "id": 29,
+      "name": "Зелёный чай",
+      "price": 199,
+      "rating": 4.6,
+      "category": "drinks",
+      "popular": false,
+      "description": "Премиальный зелёный чай сенча.",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=400&fit=crop",
+      "unit": "100 г",
+      "recipes": []
+    },
+    {
+      "id": 30,
+      "name": "Лосось филе",
+      "price": 799,
+      "rating": 4.9,
+      "category": "fish",
+      "popular": true,
+      "description": "Свежий филе лосося, богатый омега-3.",
+      "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&h=400&fit=crop",
+      "unit": "300 г",
+      "recipes": [
+        { "name": "Лосось на гриле", "ingredients": ["Лосось", "Лимон", "Укроп", "Оливковое масло"], "description": "Нежное филе с хрустящей корочкой." },
+        { "name": "Поке боул", "ingredients": ["Лосось", "Рис", "Авокадо", "Соевый соус"], "description": "Гавайский боул с сырым лососем." }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Креветки тигровые",
+      "price": 599,
+      "rating": 4.7,
+      "category": "fish",
+      "popular": true,
+      "description": "Очищенные тигровые креветки, замороженные.",
+      "image": "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=400&h=400&fit=crop",
+      "unit": "400 г",
+      "recipes": [
+        { "name": "Креветки на сковороде", "ingredients": ["Креветки", "Чеснок", "Петрушка", "Лимон"], "description": "Быстрая закуска за 10 минут." },
+        { "name": "Паста с креветками", "ingredients": ["Креветки", "Паста", "Сливки", "Пармезан"], "description": "Изысканное блюдо для особого случая." }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Сельдь атлантическая",
+      "price": 189,
+      "rating": 4.4,
+      "category": "fish",
+      "popular": false,
+      "description": "Солёная сельдь в масле, классика русской кухни.",
+      "image": "https://images.unsplash.com/photo-1534043464124-374be3fe7652?w=400&h=400&fit=crop",
+      "unit": "250 г",
+      "recipes": [
+        { "name": "Селёдка под шубой", "ingredients": ["Сельдь", "Картофель", "Свёкла", "Майонез"], "description": "Праздничный салат русской кухни." },
+        { "name": "Бутерброды с сельдью", "ingredients": ["Сельдь", "Хлеб", "Лук", "Масло"], "description": "Простая и вкусная закуска." }
+      ]
+    }
+  ]
+}
